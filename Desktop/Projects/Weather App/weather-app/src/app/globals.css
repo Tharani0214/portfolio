@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  @apply min-h-screen m-0 font-sans antialiased text-white;
+}
