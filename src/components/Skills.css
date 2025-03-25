@@ -1,0 +1,101 @@
+.skills {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: transparent;
+}
+
+.skills-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Centered Grid Layout */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Card Design */
+.skill-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Skill Titles */
+.skill-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* Skill List */
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each Skill Item */
+.skill-card li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #f4ebeb;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+/* Skill Icon Styling */
+.skill-icon {
+  font-size: 1.6rem;
+  margin-right: 12px;
+  color: #00aaff;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotate(10deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-card li {
+    font-size: 0.95rem;
+  }
+
+  .skill-icon {
+    font-size: 1.4rem;
+  }
+}

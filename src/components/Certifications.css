@@ -1,0 +1,97 @@
+.certifications {
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 85%;
+  max-width: 1200px;
+}
+
+/* Section Heading */
+.certifications h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* Certification Card */
+.certification-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effects */
+.certification-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Certification Title */
+.certification-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Issuing Organization */
+.certification-card span {
+  font-size: 0.9rem;
+  color: #b3c2c9;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.certification-card p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certifications {
+      width: 90%;
+  }
+
+  .certifications h2 {
+      font-size: 1.8rem;
+  }
+
+  .certification-card {
+      padding: 18px;
+  }
+
+  .certification-card h4 {
+      font-size: 1.1rem;
+  }
+
+  .certification-card p {
+      font-size: 0.85rem;
+  }
+}

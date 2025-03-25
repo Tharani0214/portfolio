@@ -1,0 +1,170 @@
+/* Header Styling */
+.header {
+  position: relative;
+  background: transparent;
+  color: white;
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+}
+
+/* Profile Picture Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Profile Picture Hover Effect */
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 36px;
+  color: white;
+  text-shadow: 0 0 5px;
+  border-right: 2px solid white;
+  animation: typing 3s steps(20, end), blink 0.6s infinite;
+}
+
+/* Typewriter Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking Cursor Effect */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Name Styling */
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 28px;
+  font-weight: normal;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hire Me Button Hover */
+.hire-me-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Quote Section */
+.quote-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Quote Author */
+.quote-author {
+  font-size: 18px;
+  color: #ffb6c1;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .typewriter {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .hire-me-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .quote-author {
+    font-size: 16px;
+  }
+}

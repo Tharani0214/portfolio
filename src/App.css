@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('C:/Users/SRI DHARANI/Desktop/Projects/Portfolio/portfolio/src/assests/images/bg.jpg'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e0e0e0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+header {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  position: relative;
+  background: transparent;
+  padding: 30px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  padding: 30px;
+  margin: 20px auto;
+  background: transparent;
+  border-radius: 15px;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(70, 70, 120, 0.4); /* Soft blue neon glow on hover */
+}
+
+h2 {
+  color: #e0e0e0; /* Light gray for headings */
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #b0b0b0; /* Softer gray for list items */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: transparent;
+  margin-top: 40px;
+  
+}
+
+
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  section {
+    width: 95%;
   }
 }
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 20px;
+}
+
+.projects button {
+  background-color: #1b1f3a; /* Dark blue */
+  color: #e0e0e0; /* Light text */
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projects button:hover {
+  background-color: #2a344f; /* Slightly lighter blue on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(70, 70, 120, 0.8); /* Soft blue neon glow on hover */
+}
+
+
+/* Hide scrollbar but allow scrolling */
+html, body {
+  overflow: auto; /* Allow scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none;
+}
+

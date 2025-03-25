@@ -1,0 +1,61 @@
+.resume-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: transparent;
+}
+
+.resume-title {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-preview {
+  width: 80%;
+  height: 400px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn {
+  background: #3498db;
+  color: #fff;
+}
+
+.download-btn {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.resume-btn:hover {
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 18px;
+}
