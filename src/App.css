@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('C:/Users/SRI DHARANI/Desktop/Projects/Portfolio/portfolio/src/assests/images/bg.jpg'); /* Ensure this path is correct */
+  background-image: url('./assests/images/bg.jpg'); /* Ensure this path is correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
